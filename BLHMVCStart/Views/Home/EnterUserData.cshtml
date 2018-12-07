@@ -1,0 +1,23 @@
+﻿
+@{
+    ViewBag.Title = "EnterUserData";
+}
+
+<h2>EnterUserData</h2>
+
+
+
+<form action="/Home/ShowUserData" method="POST">
+    <label for="firstname">First Name:</label>
+    <input type="text" name="firstname" />
+    <br />
+    <label for="lastname">Last Name:</label>
+    <input type="text" name="lastname" />
+    <br />
+    <label for="emailaddress">EmailAddress:</label>
+    <input type="text" name="EmailAddress" />
+    <br />
+    <label for="dateofbirth">Date Of Birth:</label>
+    <input type="text" name="dateofbirth" />
+    <input type="submit" name="ShowUserData">
+</form>

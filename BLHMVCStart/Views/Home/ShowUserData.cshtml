@@ -1,0 +1,61 @@
+﻿@model BLHMVCStart.Models.UserDataModel
+
+@{
+    ViewBag.Title = "ShowUserData";
+}
+<!-- CSS goes in the document HEAD or added to your external stylesheet -->
+<style type="text/css">
+    table.gridtable {
+        font-family: verdana,arial,sans-serif;
+        font-size: 11px;
+        color: #333333;
+        border-width: 1px;
+        border-color: #666666;
+        border-collapse: collapse;
+    }
+
+        table.gridtable th {
+            border-width: 1px;
+            padding: 8px;
+            border-style: solid;
+            border-color: #666666;
+            background-color: #dedede;
+        }
+
+        table.gridtable td {
+            border-width: 1px;
+            padding: 8px;
+            border-style: solid;
+            border-color: #666666;
+            background-color: #ffffff;
+        }
+</style>
+
+<h2>ShowUserData</h2>
+
+
+<p>
+
+</p>
+<table class="gridtable">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.FirstName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.LastName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.EmailAddress)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DateOfBirth)
+        </th>
+    </tr>
+    <tr>
+        <td>@Html.DisplayFor(model => model.FirstName)</td>
+        <td>@Html.DisplayFor(model => model.LastName)</td>
+        <td>@Html.DisplayFor(model => model.EmailAddress)</td>
+        <td>@Html.DisplayFor(model => model.DateOfBirth)</td>
+    </tr>
+</table>
